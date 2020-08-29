@@ -20,13 +20,12 @@ import Overview from 'components/Overview/Overview';
 import PictureAsPdfOutlinedIcon from '@material-ui/icons/PictureAsPdfOutlined';
 import { Context } from 'context/context';
 
-
 const useStyles = makeStyles((theme) => ({
   card: {
     border: `1px solid ${theme.palette.primary.main}`,
     borderRadius: '5px',
     [theme.breakpoints.down('sm')]: {
-     width: '100%',
+      width: '100%',
     },
   },
   image: {
@@ -107,11 +106,15 @@ const useStyles = makeStyles((theme) => ({
 
 const Details = (props) => {
   const classes = useStyles();
-  const matchesSM = useMediaQuery('(max-width:600px)')
+  const matchesSM = useMediaQuery('(max-width:600px)');
 
-  const { onSearchDetailsHandler, propEl, dataGet, dataLanguage } = useContext(
-    Context
-  );
+  const {
+    onSearchDetailsHandler,
+    propEl,
+    dataGet,
+    dataLanguage,
+    language,
+  } = useContext(Context);
 
   const curElement = dataGet.find(
     (el) => el.atomicNumber === +props.match.params.number
@@ -120,16 +123,24 @@ const Details = (props) => {
     e.preventDefault();
   };
 
-  let pdfElement;
   let image;
+  let pdfElement;
+  
   try {
     image = require(`assets/img/${curElement.name}-1.jpg`);
-    pdfElement = require(`assets/pdf/${curElement.name}.pdf`);
   } catch {
     image = require(`assets/img/Hydrogen-1.jpg`);
-    pdfElement = require(`assets/pdf/elements.pdf`);
   }
 
+  try {
+    pdfElement = language
+      ? require(`assets/pdf/en/${curElement.atomicNumber}.pdf`)
+      : require(`assets/pdf/mk/${curElement.atomicNumber}.pdf`);
+  } catch (err) {
+    pdfElement = require(`assets/pdf/en/elements.pdf`);
+  }
+
+ 
   return (
     <Box
       className={classes.section}
@@ -241,7 +252,7 @@ const Details = (props) => {
             images={curElement.image ? curElement.image : dataGet[0].image}
           />
         </Grid>
- 
+
         <Grid item container direction="column" md>
           <Box className={classes.card} style={{ padding: '1rem' }}>
             <Grid item>

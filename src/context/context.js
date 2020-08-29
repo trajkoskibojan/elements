@@ -48,9 +48,15 @@ export const Provider = (props) => {
 
   useEffect(() => {
     window.onpopstate = () => {
-      localStorage.setItem('item', JSON.stringify(!language));
-      setLanguage(!language);
+      if (window.location.pathname === '/') {
+        localStorage.setItem('item', JSON.stringify(language));
+        setLanguage(language);
+      } else {
+        localStorage.setItem('item', JSON.stringify(!language));
+        setLanguage(!language);
+      }
     };
+    console.log();
   }, [language]);
 
   useEffect(() => {

@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     top: '50%',
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
-    zIndex: '1200',
+    zIndex: '998',
   },
   spanConfig: {
     display: 'block',
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   leftSpan: {
     height: '100%',
     position: 'relative',
-    zIndex: '1200',
+    zIndex: '998',
   },
 }));
 

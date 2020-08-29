@@ -1,4 +1,4 @@
-import React, { useContext, Fragment, useEffect } from 'react';
+import React, { useContext, Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       transform: 'translateY(-.2rem)',
       position: 'relative',
-      zIndex: '1200',
+      zIndex: '998',
       background: 'black',
       border: '2px solid white',
     },
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   },
   front: {
     position: 'relative',
-    zIndex: '1200',
+    zIndex: '998',
     '@media(max-width:840px)': {
       fontSize: '4px',
     },
@@ -153,10 +153,6 @@ const Home = (props) => {
   const matchesSM = useMediaQuery('(max-width:815px)');
 
   const { dataGet, language, dataLanguage, orientation } = useContext(Context);
-
-  useEffect(() => {
-   console.log('render');
-  }, [])
 
   const dataCopy = [...dataGet];
   let bottomDataOne = dataCopy.splice(56, 15);
