@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import {
   Grid,
@@ -12,6 +12,7 @@ import {
 import { v4 as uuid } from 'uuid';
 import Label from 'components/Label/Label';
 import Cell from 'components/Cell/Cell';
+import {Context} from 'context/context'
 
 const useStyles = makeStyles((theme) => ({
   rootCell: {
@@ -23,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Legend = (props) => {
   const classes = useStyles();
-  const theme = useTheme();
+  const theme = useTheme(); 
+  const { dataLanguage } = useContext(Context);
 
   const emptyCellMid = [];
   const emptyCellEnd = [];
@@ -49,7 +51,7 @@ const Legend = (props) => {
     >
       <Box container component={Grid} justify="center" p="0 1.5rem">
         <Typography variant="h5" color="primary" gutterBottom>
-          {props.context.legend}
+          {dataLanguage.legend}
         </Typography>
         <Divider
           style={{
@@ -70,7 +72,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.alcaliMetals}
+                    {dataLanguage.alcaliMetals}
                   </Typography>
                 </Grid>
               </Grid>
@@ -85,7 +87,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.otherMetals}
+                    {dataLanguage.otherMetals}
                   </Typography>
                 </Grid>
               </Grid>
@@ -102,7 +104,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.alcaliEarth}
+                    {dataLanguage.alcaliEarth}
                   </Typography>
                 </Grid>
               </Grid>
@@ -117,7 +119,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.metaloids}
+                    {dataLanguage.metaloids}
                   </Typography>
                 </Grid>
               </Grid>
@@ -134,7 +136,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.transMetals}
+                    {dataLanguage.transMetals}
                   </Typography>
                 </Grid>
               </Grid>
@@ -149,7 +151,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.nonMetals}
+                    {dataLanguage.nonMetals}
                   </Typography>
                 </Grid>
               </Grid>
@@ -166,7 +168,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.lanthanides}
+                    {dataLanguage.lanthanides}
                   </Typography>
                 </Grid>
               </Grid>
@@ -181,7 +183,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.halogens}
+                    {dataLanguage.halogens}
                   </Typography>
                 </Grid>
               </Grid>
@@ -198,7 +200,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.actinides}
+                    {dataLanguage.actinides}
                   </Typography>
                 </Grid>
               </Grid>
@@ -213,7 +215,7 @@ const Legend = (props) => {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    {props.context.legend}
+                    {dataLanguage.legend}
                   </Typography>
                 </Grid>
               </Grid>
@@ -221,9 +223,6 @@ const Legend = (props) => {
           </Grid>
         </Grid>
       </Box>
-    {/*   <Box display="flex" pb=".1rem">
-        {svgIcons}
-      </Box> */}
     </TableCell>
   );
 

@@ -1,4 +1,4 @@
-import React, { useContext, Fragment } from 'react';
+import React, { useContext, Fragment, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -154,6 +154,10 @@ const Home = (props) => {
 
   const { dataGet, language, dataLanguage, orientation } = useContext(Context);
 
+  useEffect(() => {
+   document.cookie = 'cookie2=value2; SameSite=None; Secure;';
+  }, [])
+
   const dataCopy = [...dataGet];
   let bottomDataOne = dataCopy.splice(56, 15);
   let bottomDataTwo = dataCopy.splice(73, 15);
@@ -266,7 +270,7 @@ const Home = (props) => {
     rows.push(rowCur);
     n++;
   }
-
+  
   return (
     <Fragment>
       <DialogWiki />
@@ -280,7 +284,7 @@ const Home = (props) => {
         </Grid>
       ) : (
         <Box p={matchesSM ? '.7rem 2px 2rem 2px' : '.7rem 27px 2rem 27px'}>
-          <SearchHome context={props.context} />
+          <SearchHome />
           <Box align="center" mt={'4rem'}>
             <Typography variant="h1">{dataLanguage.periodic}</Typography>
           </Box>
@@ -333,7 +337,6 @@ const Home = (props) => {
                     rootCellMode={classes.rootCellMode}
                     label={classes.label}
                     metals={classes.metals}
-                    context={props.context}
                   />
                   <TableCell classes={{ root: classes.rootCell }}>
                     <Element

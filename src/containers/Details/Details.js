@@ -248,7 +248,6 @@ const Details = (props) => {
             </Grid>
           </Grid>
           <Slider
-            context={props.context}
             images={curElement.image ? curElement.image : dataGet[0].image}
           />
         </Grid>

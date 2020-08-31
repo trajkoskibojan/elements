@@ -9,7 +9,7 @@ import Error from 'containers/Error/Error';
 import { Context } from 'context/context';
 
 const App = () => {
-  const { dataLanguage, language } = useContext(Context);
+  const { language } = useContext(Context);
 
   return (
     <ThemeProvider theme={theme}>
@@ -21,12 +21,12 @@ const App = () => {
               exact
               path="/"
               render={(props) => (
-                <Home {...props} context={dataLanguage} isSmall="true" />
+                <Home {...props} isSmall="true" />
               )}
             />
             <Route
               path={language ? '/element/en/:number' : '/елемент/мк/:number'}
-              render={(props) => <Details {...props} context={dataLanguage} />}
+              render={(props) => <Details {...props} />}
             />
             <Route component={Error} />
           </Switch>

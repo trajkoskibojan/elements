@@ -19,7 +19,7 @@ export const Provider = (props) => {
   );
   const [show, setShow] = useState(false);
   const [screen, setScreen] = useState(false);
-  const [link, setLink] = useState(null);
+  const [link, setLink] = useState('');
   const [orientation, setOrientation] = useState(false);
 
   useEffect(() => {
@@ -56,7 +56,6 @@ export const Provider = (props) => {
         setLanguage(!language);
       }
     };
-    console.log();
   }, [language]);
 
   useEffect(() => {
@@ -93,10 +92,10 @@ export const Provider = (props) => {
   const showDialog = (number) => {
     if (language) {
       const curLinkEN = eng.wikiEN.filter((_, i) => number === i + 1);
-      setLink(curLinkEN);
+      setLink(`https://en.wikipedia.org/wiki/${curLinkEN}`);
     } else {
       const curLinkMK = mac.wikiMK.filter((_, i) => number === i + 1);
-      setLink(curLinkMK);
+      setLink(`https://mk.wikipedia.org/wiki/${curLinkMK}`);
     }
     setShow(true);
   };
@@ -133,7 +132,6 @@ export const Provider = (props) => {
         });
       }
     }
-
     setPropEl(searchRezults);
   };
 
@@ -141,7 +139,8 @@ export const Provider = (props) => {
     setSearchData(filterData);
   };
 
-  const onSearchHomeHandler = (query) => {
+  const onSearchHomeHandler = (e) => {
+    let query = e.target.value;
     const searchRezults = filterData.filter((el) =>
       el.name.toLowerCase().includes(query.toLowerCase())
     );

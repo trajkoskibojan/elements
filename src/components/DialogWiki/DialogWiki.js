@@ -12,9 +12,7 @@ import FullscreenIcon from '@material-ui/icons/Fullscreen';
 import FullscreenExitIcon from '@material-ui/icons/FullscreenExit';
 
 const DialogWiki = (props) => {
-  const { show, closeDialog, screen, fullScreen, language, link } = useContext(
-    Context
-  );
+  const { show, closeDialog, screen, fullScreen, link } = useContext(Context);
 
   return (
     <Dialog open={show} onClose={closeDialog} fullScreen={screen} keepMounted>
@@ -32,18 +30,7 @@ const DialogWiki = (props) => {
           </Grid>
         </Grid>
         <Box height="90%">
-          {
-            <iframe
-              title="hello"
-              src={
-                language
-                  ? `https://en.wikipedia.org/wiki/${link}`
-                  : `https://mk.wikipedia.org/wiki/${link}`
-              }
-              width="100%"
-              height="100%"
-            ></iframe>
-          }
+          <iframe title="hello" src={link} width="100%" height="100%"></iframe>
         </Box>
       </DialogContent>
     </Dialog>

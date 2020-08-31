@@ -90,10 +90,10 @@ const SearchHome = ({ context }) => {
       <Box width={'15rem'} style={{ position: 'absolute', zIndex: '999' }}>
         <TextField
           id="serch"
-          label={context.search}
+          label='search'
           onFocus={() => setFocused(true)}
           ref={ref}
-          onChange={(e) => onSearchHomeHandler(e.target.value)}
+          onChange={onSearchHomeHandler}
           color="primary"
           style={{ width: '100%' }}
           InputProps={{
@@ -134,7 +134,7 @@ const SearchHome = ({ context }) => {
                 onClick={resetDataHandler}
                 className={classes.suggestions}
               >
-                ... no such a file
+                {language ? '... no such a file' : '... не постои таков фајл'}
               </Typography>
             )}
           </Box>
