@@ -40,14 +40,14 @@ export const data = [
     meltingPoint: 14,
     name: 'Hydrogen',
     oxidationStates: '-1, 1',
-    standardState: 'gas',
+    standardState: 'gas', 
     symbol: 'H',
     vanDelWaalsRadius: 120,
     yearDiscovered: 1766,
     bgcolor: '#cc6633',
     selection: false,
     mark: 1,
-    image: ['Hydrogen-2', 'Hydrogen-3', 'Hydrogen-4'],
+    image: ['1-2', '1-3', '1-4'],
     description:
       'Hydrogen is the chemical element with the symbol H and atomic number 1. With a standard atomic weight of 1.008, hydrogen is the lightest element in the periodic table',
   },
@@ -75,7 +75,7 @@ export const data = [
     bgcolor: '#cccccc',
     selection: false,
     mark: 18,
-    image: ['Helium-2', 'Helium-3'],
+    image: ['2-2', '2-3'],
     description:
       'Helium (from Greek: ἥλιος, romanized: Helios, lit. "Sun") is a chemical element with the symbol He and atomic number 2. It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas',
   },
@@ -130,7 +130,7 @@ export const data = [
     bgcolor: '#33cccc',
     selection: false,
     mark: 2,
-    image: ['Beryllium-2', 'Beryllium-3', 'Beryllium-4'],
+    image: ['4-2', '4-3', '4-4'],
     description:
       'Beryllium is a chemical element with the symbol Be and atomic number 4. It is a relatively rare element in the universe, usually occurring as a product of the spallation',
   },
@@ -158,7 +158,7 @@ export const data = [
     bgcolor: '#cc9999',
     selection: false,
     mark: 13,
-    image: ['Boron-2', 'Boron-3'],
+    image: ['5-2', '5-3'],
     description:
       'Boron is a chemical element with the symbol B and atomic number 5. Produced entirely by cosmic ray spallation and supernovae and not by stellar nucleosynthesis',
   },
@@ -186,7 +186,7 @@ export const data = [
     bgcolor: '#cc6633',
     selection: false,
     mark: 14,
-    image: ['Carbon-2', 'Carbon-3', 'Carbon-4'],
+    image: ['6-2', '6-3', '6-4'],
     description:
       'Carbon (from Latin: carbo "coal") is a chemical element with the symbol C and atomic number 6. It is nonmetallic and tetravalent—making four electrons available to form covalent chemical bonds',
   },
@@ -214,7 +214,7 @@ export const data = [
     bgcolor: '#cc6633',
     selection: false,
     mark: 15,
-    image: ['Nitrogen-2', 'Nitrogen-3'],
+    image: ['7-2', '7-3'],
     description:
       'Nitrogen is the chemical element with the symbol N and atomic number 7. It was first discovered and isolated by Scottish physician Daniel Rutherford in 1772.',
   },
@@ -242,7 +242,7 @@ export const data = [
     bgcolor: '#cc6633',
     selection: false,
     mark: 16,
-    image: ['Oxygen-2', 'Oxygen-3', 'Oxygen-4'],
+    image: ['8-2', '8-3', '8-4'],
     description:
       'Oxygen is the chemical element with the symbol O and atomic number 8. It is a member of the chalcogen group in the periodic table',
   },
@@ -270,7 +270,7 @@ export const data = [
     bgcolor: '#ffffff',
     selection: false,
     mark: 17,
-    image: ['Fluorine-2', 'Fluorine-3'],
+    image: ['9-2', '9-3'],
     description:
       'Fluorine is a chemical element with the symbol F and atomic number 9. It is the lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard conditions',
   },
@@ -595,7 +595,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 3,
-    image: ['Scandium-2', 'Scandium-3'],
+    image: ['21-2', '21-3'],
     description:
       'Scandium is a chemical element with the symbol Sc and atomic number 21. A silvery-white metallic d-block element, it has historically been classified',
   },
@@ -623,7 +623,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 4,
-    image: ['Titanium-2', 'Titanium-3', 'Titanium-4'],
+    image: ['22-2', '22-3', '22-4'],
     description:
       'Titanium is a chemical element with the symbol Ti and atomic number 22. It is a lustrous transition metal with a silver color, low density,',
   },
@@ -651,7 +651,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 5,
-    image: ['Vanadium-2', 'Vanadium-3'],
+    image: ['23-2', '23-3'],
     description:
       'Vanadium is a chemical element with the symbol V and atomic number 23. It is a hard, silvery-grey, malleable transition metal. ',
   },
@@ -679,7 +679,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 6,
-    image: ['Chromium-2', 'Chromium-3', 'Chromium-4'],
+    image: ['24-2', '24-3', '24-4'],
     description:
       'Chromium is a chemical element with the symbol Cr and atomic number 24. It is the first element in group 6. It is a steely-grey, lustrous, hard and brittle transition metal',
   },
@@ -707,7 +707,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 7,
-    image: ['Manganese-2', 'Manganese-3', 'Manganese-3'],
+    image: ['25-2', '25-3', '25-3'],
     description:
       'Manganese is a chemical element with the symbol Mn and atomic number 25. It is not found as a free element in nature; it is often found in minerals in combination with iron',
   },
@@ -735,7 +735,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 8,
-    image: ['Iron-2', 'Iron-3'],
+    image: ['26-2', '26-3'],
     description:
       'Iron (/ˈaɪərn/) is a chemical element with symbol Fe (from Latin: ferrum) and atomic number 26. It is a metal that belongs to the first transition series ',
   },
@@ -763,7 +763,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 9,
-    image: ['Cobalt-2', 'Cobalt-3', 'Cobalt-4'],
+    image: ['27-2', '27-3', '27-4'],
     description:
       'Cobalt is a chemical element with the symbol Co and atomic number 27. Like nickel, cobalt is found in the Earths crust only in chemically combined form,',
   },
@@ -791,7 +791,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 10,
-    image: ['Nickel-2', 'Nickel-3'],
+    image: ['28-2', '28-3'],
     description:
       'Nickel is a chemical element with the symbol Ni and atomic number 28. It is a silvery-white lustrous metal with a slight golden tinge',
   },
@@ -819,7 +819,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 11,
-    image: ['Copper-2', 'Copper-3', 'Copper-4'],
+    image: ['29-2', '29-3', '29-4'],
     description:
       'Copper is a chemical element with the symbol Cu (from Latin: cuprum) and atomic number 29. It is a soft, malleable, and ductile metal with very high thermal',
   },
@@ -847,7 +847,7 @@ export const data = [
     bgcolor: '#f3f3ed',
     selection: false,
     mark: 12,
-    image: ['Zinc-2', 'Zinc-3', 'Zinc-4'],
+    image: ['30-2', '30-3', '30-4'],
     description:
       'Zinc is a chemical element with the symbol Zn and atomic number 30. Zinc is a slightly brittle metal at room temperature and has a blue-silvery appearance ',
   },

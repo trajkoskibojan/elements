@@ -47,7 +47,7 @@ export const data = [
            bgcolor: '#cc6633',
            selection: false,
            mark: 1,
-           image: ['Hydrogen-2', 'Hydrogen-3', 'Hydrogen-4'],
+           image: ['1-2', '1-3', '1-4'],
            description:
              'Водородот е хемиски елемент со симбол H и атомски број 1. Со стандардна атомска тежина од 1.008, водородот е најлесниот елемент во периодичната табела',
          },
@@ -75,7 +75,7 @@ export const data = [
            bgcolor: '#cccccc',
            selection: false,
            mark: 18,
-           image: ['Helium-2', 'Helium-3'],
+           image: ['2-2', '2-3'],
            description:
              'Хелиум (од грчки: ἥλιος, романтизиран: Helios, lit. „Sun“) е хемиски елемент со симбол Тој и атомски број 2. Тој е безбоен, без мирис, без вкус, нетоксичен, инертен, монатомски гас',
          },
@@ -130,7 +130,7 @@ export const data = [
            bgcolor: '#33cccc',
            selection: false,
            mark: 2,
-           image: ['Beryllium-2', 'Beryllium-3', 'Beryllium-4'],
+           image: ['4-2', '4-3', '4-4'],
            description:
              'Берилиум е хемиски елемент со симбол Б и атомски број 4. Тој е релативно редок елемент во универзумот, што обично се јавува како производ на распрскувачот',
          },
@@ -158,7 +158,7 @@ export const data = [
            bgcolor: '#cc9999',
            selection: false,
            mark: 13,
-           image: ['Boron-2', 'Boron-3'],
+           image: ['5-2', '5-3'],
            description:
              'Борот е хемиски елемент со симбол Б и атомски број 5. Произведен во целост со распрснување на космички зраци и супернови, а не со ellвездени нуклеосинтези',
          },
@@ -186,7 +186,7 @@ export const data = [
            bgcolor: '#cc6633',
            selection: false,
            mark: 14,
-           image: ['Carbon-2', 'Carbon-3', 'Carbon-4'],
+           image: ['6-2', '6-3', '6-4'],
            description:
              'Јаглерод (од латински: карбо "јаглен") е хемиски елемент со симбол Ц и атомски број 6. Тој е неметален и тетравалентен - со што на располагање се четири електрони за да се формираат ковалентни хемиски врски',
          },
@@ -214,7 +214,7 @@ export const data = [
            bgcolor: '#cc6633',
            selection: false,
            mark: 15,
-           image: ['Nitrogen-2', 'Nitrogen-3'],
+           image: ['7-2', '7-3'],
            description:
              'Азотот е хемиски елемент со симбол N и атомски број 7. Првиот пат го открил и изолирал шкотскиот лекар Даниел Радерфорд во 1772 година.',
          },
@@ -242,7 +242,7 @@ export const data = [
            bgcolor: '#cc6633',
            selection: false,
            mark: 16,
-           image: ['Oxygen-2', 'Oxygen-3', 'Oxygen-4'],
+           image: ['8-2', '8-3', '8-4'],
            description:
              'Кислородот е хемиски елемент со симбол О и атомски број 8. Тој е член на групата халкоген во периодичната табела',
          },
@@ -270,7 +270,7 @@ export const data = [
            bgcolor: '#ffffff',
            selection: false,
            mark: 17,
-           image: ['Fluorine-2', 'Fluorine-3'],
+           image: ['9-2', '9-3'],
            description:
              'Флуорот е хемиски елемент со симбол F и атомски број 9. Тој е најлесниот халоген и постои како многу токсичен бледо жолт дијатомски гас во стандардни услови',
          },
@@ -595,7 +595,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 3,
-           image: ['Scandium-2', 'Scandium-3'],
+           image: ['21-2', '21-3'],
            description:
              'Скандиумот е хемиски елемент со симболот Sc и атомски број 21. Сребрено-бел метален d-блок елемент, тој историски е класифициран',
          },
@@ -623,7 +623,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 4,
-           image: ['Titanium-2', 'Titanium-3', 'Titanium-4'],
+           image: ['22-2', '22-3', '22-4'],
            description:
              'Титаниум е хемиски елемент со симбол Ти и атомски број 22. Тој е лутазен транзициски метал со сребрена боја, мала густина,',
          },
@@ -651,7 +651,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 5,
-           image: ['Vanadium-2', 'Vanadium-3'],
+           image: ['23-2', '23-3'],
            description:
              'Ванадиум е хемиски елемент со симбол V и атомски број 23. Тој е тврд, сребро-сив, податлив метал. ',
          },
@@ -679,7 +679,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 6,
-           image: ['Chromium-2', 'Chromium-3', 'Chromium-4'],
+           image: ['24-2', '24-3', '24-4'],
            description:
              'Хром е хемиски елемент со симбол Cr и атомски број 24. Тој е првиот елемент во групата 6. Тој е цврсто сив, сјаен, тврд и кршлив транзициски метал',
          },
@@ -707,7 +707,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 7,
-           image: ['Manganese-2', 'Manganese-3', 'Manganese-3'],
+           image: ['25-2', '25-3', '25-3'],
            description:
              'Манган е хемиски елемент со симбол Mn и атомски број 25. Не се наоѓа како слободен елемент во природата; често се наоѓа во минерали во комбинација со железо',
          },
@@ -735,7 +735,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 8,
-           image: ['Iron-2', 'Iron-3'],
+           image: ['26-2', '26-3'],
            description:
              'Железото (/ ɪəaɪərn /) е хемиски елемент со симбол Fe (од латински: ферум) и атомски број 26. Тоа е метал кој припаѓа на првата серија на транзиција',
          },
@@ -763,7 +763,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 9,
-           image: ['Cobalt-2', 'Cobalt-3', 'Cobalt-4'],
+           image: ['27-2', '27-3', '27-4'],
            description:
              'Кобалт е хемиски елемент со симбол Co и атомски број 27. Како никелот, кобалтот се наоѓа во кората на Земјата само во хемиски комбинирана форма,',
          },
@@ -791,7 +791,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 10,
-           image: ['Nickel-2', 'Nickel-3'],
+           image: ['28-2', '28-3'],
            description:
              'Никел е хемиски елемент со симбол Ни и атомски број 28. Тој е сребрено-бел сјаен метал со мала златна нијанса',
          },
@@ -819,7 +819,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 11,
-           image: ['Copper-2', 'Copper-3', 'Copper-4'],
+           image: ['29-2', '29-3', '29-4'],
            description:
              'Бакар е хемиски елемент со симбол Cu (од латински: cuprum) и атомски број 29. Тој е мек, податлив и еластичен метал со многу висока термичка',
          },
@@ -847,7 +847,7 @@ export const data = [
            bgcolor: '#f3f3ed',
            selection: false,
            mark: 12,
-           image: ['Zinc-2', 'Zinc-3', 'Zinc-4'],
+           image: ['30-2', '30-3', '30-4'],
            description:
              'Цинк е хемиски елемент со симбол Зн и атомска број 30. Цинк е малку кршлив метал на собна температура и има сино-сребрен изглед',
          },

@@ -73,7 +73,7 @@ const Slider = (props) =>{
               />
             ) : null}
           </div>
-        ))}
+        ))} 
       </AutoPlaySwipeableViews>
       <MobileStepper
         variant="dots"
@@ -94,7 +94,7 @@ const Slider = (props) =>{
               <KeyboardArrowRight />
             )}
           </Button>
-        }
+        } 
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (

@@ -125,11 +125,11 @@ const Details = (props) => {
 
   let image;
   let pdfElement;
-  
+  console.log(curElement.atomicNumber);
   try {
-    image = require(`assets/img/${curElement.name}-1.jpg`);
+    image = require(`assets/img/${curElement.atomicNumber}-1.jpg`);
   } catch {
-    image = require(`assets/img/Hydrogen-1.jpg`);
+    image = require(`assets/img/1-1.jpg`);
   }
 
   try {
@@ -250,7 +250,7 @@ const Details = (props) => {
           <Slider
             images={curElement.image ? curElement.image : dataGet[0].image}
           />
-        </Grid>
+        </Grid> 
 
         <Grid item container direction="column" md>
           <Box className={classes.card} style={{ padding: '1rem' }}>
